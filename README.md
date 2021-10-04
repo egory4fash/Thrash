@@ -1,2 +1,2 @@
 # Test
- test repisitory
+ test repository
