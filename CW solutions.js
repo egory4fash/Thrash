@@ -23,3 +23,14 @@ let sum = 0;
   }
   return sum
 }
+
+function countBy(x, n) {
+  let z = [];
+  let cnt = 1;
+  for (let i =x;cnt<=n;i+=x) {
+    z.push(i);
+    cnt++;
+  }
+
+  return z;
+}
