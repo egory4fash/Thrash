@@ -43,3 +43,8 @@ function checkAlive (health) {
     return true;
   }
 }
+
+function sumStr(a,b) {
+  let num =(+(a) + +(b));
+  return num.toString();
+}
