@@ -48,3 +48,7 @@ function sumStr(a,b) {
   let num =(+(a) + +(b));
   return num.toString();
 }
+
+function greet(name){
+  return "Hello, "+name+ " how are you doing today?"
+}
