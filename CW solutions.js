@@ -60,3 +60,7 @@ function divide(weight){
   return weight % 2 == 0;
     }
 }
+
+function take(arr, n) {
+ return arr.slice(0,n);
+  }
