@@ -52,3 +52,11 @@ function sumStr(a,b) {
 function greet(name){
   return "Hello, "+name+ " how are you doing today?"
 }
+
+function divide(weight){
+  if (weight<4) {
+    return false;
+  } else {
+  return weight % 2 == 0;
+    }
+}
