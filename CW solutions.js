@@ -77,3 +77,15 @@ let age = otherDate - birthDate;
 function distinct(a) {
   return ([...new Set(a)]);
 }
+
+function hello(name) {
+  if (name&&name !="") {
+    let low = name.toLowerCase();
+    let first = name.charAt(0);
+    let bigFirst = first.toUpperCase();
+    let remain = low.slice(1);
+    return "Hello, "+bigFirst+remain+"!";
+  } else {
+    return "Hello, World!";
+  }
+}
