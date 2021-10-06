@@ -152,3 +152,15 @@ function ensureQuestion(s) {
 function feast(beast, dish) {
 return (beast[0] == dish[0]&&beast[beast.length-1] == dish[dish.length-1]) ? true : false;
 }
+
+String.prototype.toAlternatingCase = function () {
+  let rev = "";
+  for (let i=0;i<this.length;i++) {
+    if (this[i] == this[i].toUpperCase()) {;
+    rev +=this[i].toLowerCase();
+  } else {
+    rev += this[i].toUpperCase();
+  }
+    }
+  return rev;
+}
