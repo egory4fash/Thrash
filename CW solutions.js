@@ -139,3 +139,12 @@ function findMultiples(integer, limit) {
   }
    return arr; 
 }
+
+function ensureQuestion(s) {
+  if (s[s.length-1] == "?") {
+    return s;
+  } else {
+    let newStr = s +"?";
+    return newStr;
+  }
+}
