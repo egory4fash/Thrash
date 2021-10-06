@@ -64,3 +64,39 @@ function divide(weight){
 function take(arr, n) {
  return arr.slice(0,n);
   }
+
+function htmlspecialchars(formData) {
+  // Insert your code here
+let arr = [];
+  for (let i = 0; i < formData.length; i++){
+   switch(formData[i]){
+     case '<' :
+       arr.push('&lt;');
+        break;
+     case '>' :
+       arr.push('&gt;');
+       break;
+     case '"' :
+       arr.push('&quot;');
+       break;
+     case '&' :
+       arr.push('&amp;');
+       break;
+     default :
+       arr.push(formData[i]);
+   }
+  }
+return arr.join('');
+}
+
+function defineSuit(card) {
+ 
+   let suit = card.substr(-1);
+   switch(suit){
+      case '¦': return 'clubs';
+      case '¦': return 'diamonds';
+      case '¦': return 'hearts';
+      default: return 'spades';
+   }
+
+}
