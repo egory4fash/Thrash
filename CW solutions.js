@@ -99,3 +99,8 @@ function strCount(str, letter){
   }
   return cnt;
 }
+
+function solution(a, b){
+  let res = (a.length>b.length) ? b+a+b : a+b+a;
+  return res;
+}
