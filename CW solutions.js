@@ -73,3 +73,7 @@ let age = otherDate - birthDate;
       return 'You were born this very year!';
     }
 }
+
+function distinct(a) {
+  return ([...new Set(a)]);
+}
