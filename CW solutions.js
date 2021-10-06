@@ -110,3 +110,7 @@ function usdcny(usd) {
   return chinese.toFixed(2).toString()+" Chinese Yuan";
   
 }
+
+function cockroachSpeed(s) {
+  return Math.floor(s * 27.7778);
+}
