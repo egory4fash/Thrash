@@ -131,3 +131,11 @@ return twice < 0 ? twice * (-1) : twice;
 function twoSort(s) {
   return s.sort()[0].split('').join('***');
 }
+
+function findMultiples(integer, limit) {
+  let arr = [];
+  for(let i =integer;i<=limit;i +=integer) {
+    arr.push(i);
+  }
+   return arr; 
+}
