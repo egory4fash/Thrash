@@ -104,3 +104,9 @@ function solution(a, b){
   let res = (a.length>b.length) ? b+a+b : a+b+a;
   return res;
 }
+
+function usdcny(usd) {
+  let chinese = usd*6.75;
+  return chinese.toFixed(2).toString()+" Chinese Yuan";
+  
+}
