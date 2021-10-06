@@ -114,3 +114,11 @@ function usdcny(usd) {
 function cockroachSpeed(s) {
   return Math.floor(s * 27.7778);
 }
+
+function between(a, b) {
+let ans = [];
+  for (let i = a;i<=b;i++) {
+    ans.push(i);
+  }
+  return ans;
+}
