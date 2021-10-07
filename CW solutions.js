@@ -177,3 +177,21 @@ function reverseWords(str){
 function all( arr, fun ){
   return arr.every(fun);
 }
+
+function countPositivesSumNegatives(input) {
+    let cnt = 0;
+  let sum = 0;
+  if (input == null || input.length < 1){
+  return [];
+  }else {
+    for (let i = 0;i < input.length;i++) {
+    if (input[i]>0) {
+      cnt++;
+    }else if (input[i]<0){
+      sum+=input[i];
+      }
+    }
+    return [cnt,sum];
+  }
+  }
+
