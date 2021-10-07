@@ -173,3 +173,7 @@ function reverseWords(str){
   }
   return answer.join(' ');
 }
+
+function all( arr, fun ){
+  return arr.every(fun);
+}
