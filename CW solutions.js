@@ -164,3 +164,12 @@ String.prototype.toAlternatingCase = function () {
     }
   return rev;
 }
+
+function reverseWords(str){
+  let arr = str.split(" ");
+  let answer = [];
+  for (let i = 0;i<arr.length;i++) {
+    answer.unshift(arr[i]);
+  }
+  return answer.join(' ');
+}
