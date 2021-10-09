@@ -222,3 +222,19 @@ function removeChars(s) {
   }
   return str;
 }
+
+var moveZeros = function (arr) {
+  let answer = [];
+  let cnt = 0;
+  for (let i=0;i<arr.length;i++) {
+    if (arr[i]!==0) {
+      answer.push(arr[i]);
+  } else {
+    cnt++;
+  }
+    }
+  for (let i =0;i<cnt;i++) {
+    answer.push(0);
+  }
+  return answer;
+}
