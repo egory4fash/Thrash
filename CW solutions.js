@@ -238,3 +238,16 @@ var moveZeros = function (arr) {
   }
   return answer;
 }
+
+let hours = Math.floor(seconds / 60 / 60);
+  let remainder = seconds - hours * 60 * 60;
+  let minutes = Math.floor(remainder / 60);
+  let second = remainder - minutes * 60;
+
+  return (
+    hours.toString().padStart(2, "0") +
+    ":" +
+    minutes.toString().padStart(2, "0") +
+    ":" +
+    second.toString().padStart(2, "0")
+  )
