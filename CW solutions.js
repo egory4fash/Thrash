@@ -212,3 +212,13 @@ return arr;
 var countSquares = function(cuts){
 return cuts <=0 ? 1 : 6 * cuts * cuts + 2;
 }
+
+function removeChars(s) {
+  let str='';
+  for (let i = 0;i<s.length;i++) {
+    if (s[i].search(/[^a-zA-Z]+/)||s[i] == " ") {
+      str += s[i];
+    } 
+  }
+  return str;
+}
