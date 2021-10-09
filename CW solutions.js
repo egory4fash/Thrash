@@ -198,3 +198,13 @@ function countPositivesSumNegatives(input) {
 function makeNegative(num) {
  return num > 0 ? -num : num;
   }
+
+function fixTheMeerkat(arr) {
+ let end = arr.shift();
+let start = arr.pop();
+
+arr.push(end);
+arr.unshift(start);
+
+return arr; 
+}
