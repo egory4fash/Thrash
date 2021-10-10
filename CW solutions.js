@@ -256,3 +256,9 @@ let hours = Math.floor(seconds / 60 / 60);
 function nameShuffler(str){
   return str.split(" ").reverse().join(" ");
 }
+
+function updateLight(current) {
+  
+return current == "red" ? "green" : current == "yellow" ? "red" : "yellow";
+
+}
