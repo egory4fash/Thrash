@@ -251,3 +251,8 @@ let hours = Math.floor(seconds / 60 / 60);
     ":" +
     second.toString().padStart(2, "0")
   )
+
+
+function nameShuffler(str){
+  return str.split(" ").reverse().join(" ");
+}
